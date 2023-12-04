@@ -18,19 +18,6 @@ def set_bg_color(hex_color):
 # Set the background color to light pink (#ffb6c1)
 set_bg_color("#A7C7E7")
 
-st.markdown("""
-    <style>
-    div.stButton > button:first-child {
-        background-color: #;
-        color: black;
-    }
-    /* Ändere die Farbe beim Überfahren mit der Maus */
-    div.stButton > button:first-child:hover {
-        background-color: #96DED1;
-        color: white;
-    }
-    </style>""", unsafe_allow_html=True)
-
 @st.cache_data
 def load_data():
     file_path = 'industriesplit_input.xlsx'
