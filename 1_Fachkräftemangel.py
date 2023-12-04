@@ -34,7 +34,7 @@ st.markdown("""Um der Berücksichtigung verschiedener Einflussfaktroren des Arbe
             wurden verschiedene Szenarien erstellt. 
             Diese sollen durch die verschiedenen Stufen der Kompklexität eine bessere Annäherung an die Realität darstellen. 
             Beachte, dass die Szenarien aufeinander aufbauen. 
-            Zur validierung wird eine weitere Berechnung aufgesetzt, 
+            Zur Validierung wird eine weitere Berechnung aufgesetzt, 
             die sich der Lücke zwischen Arbeitsnachfrage und Arbeitsangebot bedient. """)
 
 # Status für das Anzeigen der Beschreibung (anfänglich auf False gesetzt)
@@ -48,7 +48,7 @@ if st.button('Klicke hier, um mehr über die Berechnungen zu erfahren'):
 # Wenn der Status True ist, wird das Dropdown-Menü mit den Beschreibungen gezeigt
 if st.session_state.show_description:
     szenario_description = st.selectbox(
-        'Wähle ein Methode aus, über das du mehr erfahren möchstest:',
+        'Wähle ein Methode aus, über die du mehr erfahren möchstest:',
         ['Forecast vs. Demand-Supply-Gap', 'Methode 1 - Szenario 1', 'Methode 1 - Szenario 2', 'Methode 1 - Szenario 3', 'Demand-Supply-Gap', 'Bedeutung von W1, W2 und W3']
     )
     
