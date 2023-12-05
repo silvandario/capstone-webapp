@@ -1,20 +1,5 @@
 import streamlit as st
 
-def set_bg_color(hex_color):
-    st.markdown(
-        f"""
-        <style>
-        .stApp {{
-            background-color: {hex_color};
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-
-# Set the background color to light pink (#ffb6c1)
-set_bg_color("white")
-
 st.title("Kontakt")
 
 st.markdown('Bei Anregungen oder Fragen: Schreibe uns gerne auf LinkedIn! Wir freuen uns auf spannende Gespräche.')
