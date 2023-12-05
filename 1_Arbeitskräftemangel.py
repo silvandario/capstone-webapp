@@ -30,9 +30,9 @@ filtered_df = pd.DataFrame()
 
 st.title("Arbeitskräftemangel in Deutschland quantifiziert")
 
-st.markdown("""Um der Berücksichtigung verschiedener Einflussfaktroren des Arbeitskräftemangel gerecht zu werden,
+st.markdown("""Um der Berücksichtigung verschiedener Einflussfaktoren des Arbeitskräftemangel gerecht zu werden,
             wurden verschiedene Szenarien erstellt. 
-            Diese sollen durch die verschiedenen Stufen der Kompklexität eine bessere Annäherung an die Realität darstellen. 
+            Diese sollen durch die verschiedenen Stufen der Komplexität eine bessere Annäherung an die Realität darstellen. 
             Beachte, dass die Szenarien aufeinander aufbauen. 
             Zur Validierung wird eine weitere Berechnung aufgesetzt, 
             die sich der Lücke zwischen Arbeitsnachfrage und Arbeitsangebot bedient. """)
