@@ -87,9 +87,18 @@ with st.container():
         # Daten basierend auf dem Zeitraum und Szenario filtern
         filtered_df = df[(df['Year'] >= years[0]) & (df['Year'] <= years[1])]
         
-        if st.checkbox('Zeig mir die totale Anzahl der fehlenden Arbeitskräfte'):
-            total_gap = round(filtered_df[szenario].sum()/1000)
-            st.write(f"Im Zeitraum von {years[0]} bis {years[1]} entsteht eine Arbeitskräftelücke von {total_gap} Millionen Personen")   
+        if st.checkbox('Zeig mir die Differenz der fehlenden Arbeitskräfte'):
+    # Berechnen der Differenz der fehlenden Arbeitskräfte zwischen Anfangs- und Endjahr in Tausend
+    start_year_gap = filtered_df[filtered_df['Year'] == years[0]][szenario].values[0]
+    end_year_gap = filtered_df[filtered_df['Year'] == years[1]][szenario].values[0]
+    total_gap_diff = ((end_year_gap - start_year_gap)
+    
+    # Überprüfen, ob die Differenz positiv oder negativ ist als check
+    if total_gap_diff >= 0:
+        st.write(f"Zwischen den Jahren {years[0]} und {years[1]} entsteht eine zusätzliche Arbeitskräftelücke von {total_gap_diff} Tausend Personen")
+    else:
+        st.write(f"Zwischen den Jahren {years[0]} und {years[1]} verringert sich die Arbeitskräftelücke um {-total_gap_diff} Tausend Personen")
+
 
     with col1:
         st.title('Arbeitskräftelücke Szenario-Analyse')
@@ -124,7 +133,7 @@ st.markdown(
     )
 
 with st.expander("Weitere Informationen"):
-    st.write("Capstoneprojekt HSG - Siehe Excel für Berechnungen und Quellen")
+    st.write("Universität St. Gallen mit dem Industriepartner Strategy& durchgeführt. Für die Richtigkeit der Daten leisten wir keine Gewähr. Weiterverwendung der Inhalte mit korrekter Zitation gestatt.")
 
 #hide style
 
