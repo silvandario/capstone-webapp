@@ -14,7 +14,7 @@ image_file_path = 'silvan.png'
 st.image(image_file_path, caption='Schreibe Silvan auf LinkedIn')
 
 with st.expander("Weitere Informationen"):
-    st.write("Capstoneprojekt HSG - Siehe Excel für Berechnungen und Quellen")  
+    st.write("Universität St. Gallen mit dem Industriepartner Strategy& durchgeführt. Für die Richtigkeit der Daten leisten wir keine Gewähr. Weiterverwendung der Inhalte mit korrekter Zitation gestatt.")  
 
 #hide style
 
