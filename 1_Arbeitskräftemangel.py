@@ -87,11 +87,11 @@ with st.container():
         # Daten basierend auf dem Zeitraum und Szenario filtern
         filtered_df = df[(df['Year'] >= years[0]) & (df['Year'] <= years[1])]
         
-if st.checkbox('Zeig mir die Differenz der fehlenden Arbeitskräfte'):
-    # Berechnen der Differenz der fehlenden Arbeitskräfte zwischen Anfangs- und Endjahr
-    start_year_gap = filtered_df[filtered_df['Year'] == years[0]][szenario].values[0]
-    end_year_gap = filtered_df[filtered_df['Year'] == years[1]][szenario].values[0]
-    total_gap_diff = (end_year_gap - start_year_gap)
+        if st.checkbox('Zeig mir die Differenz der fehlenden Arbeitskräfte'):
+            # Berechnen der Differenz der fehlenden Arbeitskräfte zwischen Anfangs- und Endjahr
+            start_year_gap = filtered_df[filtered_df['Year'] == years[0]][szenario].values[0]
+            end_year_gap = filtered_df[filtered_df['Year'] == years[1]][szenario].values[0]
+            total_gap_diff = (end_year_gap - start_year_gap)
     
     # Überprüfen, ob die Differenz positiv oder negativ ist, um eine angemessene Meldung anzuzeigen
     if total_gap_diff >= 0:
