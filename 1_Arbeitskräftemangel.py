@@ -113,8 +113,8 @@ with st.container():
             st.pyplot(fig)
 
         if st.checkbox('Zeige mir die Daten für die ausgewählten Jahre'):
-            st.write("Tabelle der fehlenden Arbeitskräfteß:")
-            year_df = filtered_df
+            st.write("Tabelle der fehlenden Arbeitskräfte (in Tausend):")
+            year_df = filtered_df.drop(["BIP-Schaden Methode 1", "BIP-Schaden Methode 2"], axis=1)
             year_df = year_df.set_index('Year')
 
             st.dataframe(year_df)
