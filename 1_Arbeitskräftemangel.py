@@ -92,14 +92,12 @@ with st.container():
             start_year_gap = filtered_df[filtered_df['Year'] == years[0]][szenario].values[0]
             end_year_gap = filtered_df[filtered_df['Year'] == years[1]][szenario].values[0]
             total_gap_diff = (end_year_gap - start_year_gap)
-    
-    # Überprüfen, ob die Differenz positiv oder negativ ist, um eine angemessene Meldung anzuzeigen
-    if total_gap_diff >= 0:
-        st.write(f"Zwischen den Jahren {years[0]} und {years[1]} entsteht eine zusätzliche Arbeitskräftelücke von {total_gap_diff} Tausend Personen")
-    else:
-        st.write(f"Zwischen den Jahren {years[0]} und {years[1]} verringert sich die Arbeitskräftelücke um {-total_gap_diff} Tausend Personen")
-
-
+            # Überprüfen, ob die Differenz positiv oder negativ ist, um eine angemessene Meldung anzuzeigen
+            if total_gap_diff >= 0:
+                st.write(f"Zwischen den Jahren {years[0]} und {years[1]} entsteht eine zusätzliche Arbeitskräftelücke von {total_gap_diff} Tausend Personen")
+            else:
+                st.write(f"Zwischen den Jahren {years[0]} und {years[1]} verringert sich die Arbeitskräftelücke um {-total_gap_diff} Tausend Personen")
+        
     with col1:
         st.title('Arbeitskräftelücke Szenario-Analyse')
         if not filtered_df.empty:
@@ -113,6 +111,13 @@ with st.container():
             plt.grid(axis='y', linestyle='--', linewidth=0.7, alpha=0.7)
             plt.tight_layout()
             st.pyplot(fig)
+
+        if st.checkbox('Zeige mir die Daten für die ausgewählten Jahre'):
+            st.write("Tabelle der fehlenden Arbeitskräfteß:")
+            year_df = filtered_df
+            year_df = year_df.set_index('Year')
+
+            st.dataframe(year_df)
 
 
 # Custom CSS 
