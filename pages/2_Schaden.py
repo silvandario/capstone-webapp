@@ -100,7 +100,7 @@ with st.container():
             st.pyplot(fig)
 
 with st.expander("Weitere Informationen"):
-    st.write("Capstoneprojekt HSG - Siehe Excel für Berechnungen und Quellen")
+    st.write("Universität St. Gallen mit dem Industriepartner Strategy& durchgeführt. Für die Richtigkeit der Daten leisten wir keine Gewähr. Weiterverwendung der Inhalte mit korrekter Zitation gestatt.")
 #hide style
 
 hide_st_style = """
