@@ -93,7 +93,7 @@ with st.container():
         st.download_button(label="Japan", data=PDFbyte, file_name="japan.pdf", mime='application/octet-stream')
 
 with st.expander("Weitere Informationen"):
-    st.write("Disclaimer: Diese Untersuchung wurde im Rahmen des Capstone-Projektes an der Universität St. Gallen mit dem Industriepartner Strategy& durchgeführt. Für die Richtigkeit der Daten leisten wir keine Gewähr. Weiterverwendung der Inhalte mit korrekter Zitation gestatt.")  
+    st.write("Disclaimer: Diese Untersuchung wurde im Rahmen des Capstone-Projektes an der Universität St. Gallen mit dem Industriepartner Strategy& durchgeführt. Für die Richtigkeit der Daten leisten wir keine Gewähr. Weiterverwendung der Inhalte mit korrekter Zitation gestattet.")  
 
 #hide style
 
