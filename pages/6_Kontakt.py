@@ -10,6 +10,12 @@ st.image(image_file_path, caption='Schreibe Lucas auf LinkedIn')
 image_file_path = 'yanis.png'
 st.image(image_file_path, caption='Schreibe Yanis auf LinkedIn')
 
+image_file_path = 'luciano.png'
+st.image(image_file_path, caption='Schreibe Luciano auf LinkedIn')
+
+image_file_path = 'david.png'
+st.image(image_file_path, caption='Schreibe David auf LinkedIn')
+
 image_file_path = 'silvan.png'
 st.image(image_file_path, caption='Schreibe Silvan auf LinkedIn')
 
