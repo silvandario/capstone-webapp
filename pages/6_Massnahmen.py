@@ -24,7 +24,7 @@ image_file_path2 = 'overview2.png'
 st.image(image_file_path1)
 st.image(image_file_path2)
 
-st.markdown('Neugierig? Die einzelnen Massnahmen im Detail')
+st.markdown('Neugierig? Die einzelnen Massnahmen gibt es unten im Detail!')
 st.markdown('Folgende Massnahmen sollte Deutschland umsetzen:')
 
 # Renteneintrittsalter
