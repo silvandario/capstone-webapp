@@ -15,18 +15,18 @@ def set_bg_color(hex_color):
 # Set the background color to light pink (#ffb6c1)
 set_bg_color("#ffb6c1")
 
-st.title("Effektive Massnahmen zur Bekämpfung")
+st.title("Effektive Best-Practices zur Bekämpfung")
 
 st.markdown('In Deutschland sieht es besonders brenzlig aus!')
 
 image_file_path = 'heatmap.png'
 st.image(image_file_path, caption='Heatmap')
 
-st.title("Welche Massnahmen bieten sich für Deutschland an?")
+st.title("Welche Best-Practices bieten sich für Deutschland an?")
 
 
 
-st.markdown('Mit dem Blick auf andere Länder gerichtet untersuchen wir Massnahmen und Best-Practices, die sich Deutschland zu Herzen nehmen könnte.')
+st.markdown('Mit dem Blick auf andere Länder gerichtet untersuchen wir Best-Practices, die sich Deutschland zu Herzen nehmen könnte.')
 
 st.markdown('Folgende Best-Practices sind besonders interessant:')
 
