@@ -59,13 +59,13 @@ with st.container():
 
 # Bindung
 with st.container():
-    st.write('**Bindung**')
+    st.write('**Förderung von Weiterbildungen**')
     st.write('Bindung von Fachkräften an das Land durch steuerliche Anreize in Form von Ermäßigungen bei den Ausbildungskosten')
-    if st.checkbox('Mehr Infos zur Bindung'):
+    if st.checkbox('Mehr Infos zu Weiterbildungen'):
         pdf_file_path = 'training_costs.pdf'
         with open(pdf_file_path, "rb") as pdf_file:
             PDFbyte = pdf_file.read()
-        st.download_button(label="Bindung", data=PDFbyte, file_name="training_costs.pdf", mime='application/octet-stream')
+        st.download_button(label="Weiterbildung", data=PDFbyte, file_name="training_costs.pdf", mime='application/octet-stream')
 
 # asylsuchende
 with st.container():
