@@ -47,10 +47,14 @@ with st.container():
     st.write('**Best Practice Schweiz**')
     st.write('Behebung des Fachkräftemangels durch verstärkte Erwachsenenbildung. Außerdem soll eine integrativere Arbeitskultur durch bessere Bildung für Menschen mit Behinderungen und eine gezieltere Ausgleichsabgabe erreicht werden.')
     if st.checkbox('Mehr Infos 🇨🇭'):
-        pdf_file_path = 'switzerland.pdf'
+        pdf_file_path = 'switzerland-1.pdf'
         with open(pdf_file_path, "rb") as pdf_file:
             PDFbyte = pdf_file.read()
-        st.download_button(label="Schweiz", data=PDFbyte, file_name="switzerland.pdf", mime='application/octet-stream')
+        st.download_button(label="Schweiz 1", data=PDFbyte, file_name="switzerland.pdf", mime='application/octet-stream')
+        pdf_file_path = 'switzerland-2.pdf'
+        with open(pdf_file_path, "rb") as pdf_file:
+            PDFbyte = pdf_file.read()
+        st.download_button(label="Schweiz 2", data=PDFbyte, file_name="switzerland.pdf", mime='application/octet-stream')
 
 # USA
 with st.container():
@@ -67,10 +71,14 @@ with st.container():
     st.write('**Best Practice Kanada**')
     st.write('Steigerung der Attraktivität Deutschlands durch Förderung einer Willkommenskultur und Vereinfachung bürokratischer Verfahren. Erleichterung der Zuwanderung durch eine verbesserte Chancenkarte, um qualifizierte Fachkräfte effektiv anzuziehen.')
     if st.checkbox('Mehr Infos 🇨🇦'):
-        pdf_file_path = 'canada.pdf'
+        pdf_file_path = 'canada-1.pdf'
         with open(pdf_file_path, "rb") as pdf_file:
             PDFbyte = pdf_file.read()
-        st.download_button(label="Kanada", data=PDFbyte, file_name="canada.pdf", mime='application/octet-stream')
+        st.download_button(label="Kanada 1", data=PDFbyte, file_name="canada.pdf", mime='application/octet-stream')
+        pdf_file_path = 'canada-2.pdf'
+        with open(pdf_file_path, "rb") as pdf_file:
+            PDFbyte = pdf_file.read()
+        st.download_button(label="Kanada 2", data=PDFbyte, file_name="canada.pdf", mime='application/octet-stream')
 
 # China
 with st.container():
