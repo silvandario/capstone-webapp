@@ -92,7 +92,7 @@ with st.container():
             
             
             
-            st.title('BIP-Lücke nähert sich bis 2040 einer Billion')
+            st.title('Steuerausfälle summieren sich bis 2040 zu einer Billion Euro')
             # Anpassung für die Berechnung des Durchschnitts
             def calculate_average(df, year, category):
                 methode_1 = df.loc[df['Year'] == year, f'{category} (Methode 1)'].values[0]
